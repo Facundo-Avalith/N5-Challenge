@@ -1,10 +1,20 @@
-import prods from "../../db/data.json";
 import { TYPES } from "../types";
 
-export const storeReducer = (state = { prods }, action) => {
+const initialState = {
+  loading: false,
+  error: false,
+  prods: {},
+};
+
+export const storeReducer = (state = initialState, action) => {
   switch (action.type) {
     case TYPES.INIT:
-      return {};
+      return {
+        ...state,
+        loading: action.payload.loading,
+        error: action.payload.error,
+        prods: action.payload.response,
+      };
     case TYPES.SUCCES:
       return {};
 

@@ -31,7 +31,7 @@ export const cartReducer = (state = itemList, action) => {
     case TYPES.REMOVE_ALL_FROM_CART:
       return {};
     case TYPES.CLEAR_CART:
-      return {};
+      return action.payload;
     default:
       return state;
   }
