@@ -22,3 +22,12 @@ export const initProducts = (response) => ({
     response,
   },
 });
+
+export const update_stock = ({name, amount, price}) => ({
+  type: TYPES.UPDATE_STOCK,
+  payload: {
+    name,
+    amount,
+    price
+  },
+});

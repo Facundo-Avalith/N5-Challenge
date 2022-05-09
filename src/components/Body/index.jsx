@@ -1,19 +1,12 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getInitialProducts } from '../../redux/actions/productActions';
-
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 import Card from './productCard/index';
 import './bodyStyles.modules.css';
 
 const Body = () => {
-  const dispatch = useDispatch();
   const { prods } = useSelector((state) => state.store);
   const { products } = prods;
-
-  useEffect(() => {
-    dispatch(getInitialProducts());
-  }, [])
 
   if (!products) return null;
 

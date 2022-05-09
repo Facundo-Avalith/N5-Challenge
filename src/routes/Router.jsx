@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MainPage from "../pages/MainPage/index";
 import CartPage from "../pages/CartPage/index";
+import AddItemPage from '../pages/AddItemPage/index'
 import Header from '../components/Header';
 const PageRoutes = () => {
   return (
@@ -10,6 +11,7 @@ const PageRoutes = () => {
     <BrowserRouter>
       <Header />
       <Routes>
+        <Route path="/addNewItem" element={<AddItemPage />} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/" element={<MainPage />} />
       </Routes>

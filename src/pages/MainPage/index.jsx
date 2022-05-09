@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './appStyles.modules.css';
-
 import Body from "../../components/Body/index"
 
 const MainPage = () => {

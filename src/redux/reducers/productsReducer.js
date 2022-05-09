@@ -15,10 +15,24 @@ export const storeReducer = (state = initialState, action) => {
         error: action.payload.error,
         prods: action.payload.response,
       };
-    case TYPES.SUCCES:
-      return {};
+    case TYPES.UPDATE_STOCK: {
+      let id = state.prods.products.length;
+      let newItemInStock = {
+        ...action.payload,
+        id: id + 1,
+      };
+      return state.prods.products.push(newItemInStock);
+    }
 
     default:
       return state;
   }
 };
+/*
+{
+        prods: {
+          ...state.prods.products,
+          id: { newItemInStock },
+        },
+      };
+*/
