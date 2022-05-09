@@ -15,17 +15,17 @@ export const remove_all_from_cart = (id) => {
   return {
     type: TYPES.REMOVE_ALL_FROM_CART,
     payload: {
-      id
-    }
-  }
+      id,
+    },
+  };
 };
 export const remove_one_from_cart = (id) => {
   return {
     type: TYPES.REMOVE_ONE_FROM_CART,
     payload: {
-      id
-    }
-  }
+      id,
+    },
+  };
 };
 export const clear_cart = () => {
   return {

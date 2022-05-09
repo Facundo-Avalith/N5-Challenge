@@ -19,7 +19,6 @@ const CartPage = () => {
       <h1> Tu carrito de compras</h1>
       <div>
         {item.map((product, index) => {
-          console.log(item)
           return (<Cart key={index} product={product} />)
         })}
         <button onClick={clearCart}>Eliminar todos los productos</button>

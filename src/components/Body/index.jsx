@@ -10,10 +10,10 @@ const Body = () => {
   const dispatch = useDispatch();
   const { prods } = useSelector((state) => state.store);
   const { products } = prods;
-  
+
   useEffect(() => {
     dispatch(getInitialProducts());
-  },[])
+  }, [])
 
   if (!products) return null;
 

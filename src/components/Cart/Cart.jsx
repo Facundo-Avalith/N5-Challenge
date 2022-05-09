@@ -1,9 +1,12 @@
 import React from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { remove_all_from_cart, remove_one_from_cart } from '../../redux/actions/cartActions';
 
 const Cart = ({ product }) => {
   const dispatch = useDispatch()
+  
+  const itemList = useSelector((state) => state.cart);
+  if (!itemList) return null
 
   const delFromCart = (id, all = false) => {
     if (all) {
@@ -12,6 +15,7 @@ const Cart = ({ product }) => {
       dispatch(remove_one_from_cart(id))
     }
   }
+
 
   return (
     <div>
