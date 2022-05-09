@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,YAAY,CAAC;EACX,UAAU,ECQI,OAAO;EDPrB,KAAK,EAAE,IAAI;EAEX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,IAAI;CACd;;AAED,AAAA,iBAAiB,CAAC;EAChB,UAAU,EAAE,aAAa;CAC1B",
+    "sources": [
+        "bodyStyles.modules.scss",
+        "../scss/globalColors.scss"
+    ],
+    "names": [],
+    "file": "bodyStyles.modules.css"
+}

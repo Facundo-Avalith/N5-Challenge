@@ -1,0 +1,18 @@
+.bodyWrapper {
+  background: #FFFFFF;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.accordeonWrapper {
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+/*# sourceMappingURL=bodyStyles.modules.css.map */

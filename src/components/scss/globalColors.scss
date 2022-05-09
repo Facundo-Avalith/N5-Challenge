@@ -1,0 +1,25 @@
+$primary-color: #D22630;
+$intermediate-color: #DF3C34;
+$seccondary-color: #FF7040;
+$bg-light-one: #DDDEDF;
+$bg-light-two: #F3FAFF;
+$bg-dark: #1A1613;
+$bg-red: #D22630;
+$bg-orange: #FF7040;
+$neutral-dark: #1A1613;
+$neutral-grey: #B5B6B8;
+$neutral-light-grey: #DDDEDF;
+$neutral-light-grey-two: #F3F3F5;
+$neutral-white: #FFFFFF;
+$support-error: #F9263F;
+$support-succes: #05C686;
+
+@mixin keyframes($name){
+  @keyframes #{$name}{
+      @content;
+  }
+} 
+
+@mixin animate($animation, $duration, $method, $times) {
+  animation: $animation $duration $method $times;
+}

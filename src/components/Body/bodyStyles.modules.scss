@@ -1,0 +1,15 @@
+@import '../scss/globalColors.scss';
+
+
+.bodyWrapper {
+  background: $neutral-white;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.accordeonWrapper {
+  transition: all ease 0.3s;
+}

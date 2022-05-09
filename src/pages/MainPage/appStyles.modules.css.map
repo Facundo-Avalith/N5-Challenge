@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,CAAC,CAAC;EACA,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACvB;;AAED,AAAA,SAAS,CAAC;EACR,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,YAAY,EAAE,KAAK;EACnB,aAAa,EAAE,KAAK;EACpB,WAAW,EAAE,IAAI;EACjB,QAAQ,EAAE,QAAQ;EAClB,WAAW,EAAE,oBAAoB;CAClC",
+    "sources": [
+        "appStyles.modules.scss",
+        "../../components/scss/globalColors.scss"
+    ],
+    "names": [],
+    "file": "appStyles.modules.css"
+}
