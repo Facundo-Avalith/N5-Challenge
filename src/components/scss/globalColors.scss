@@ -14,12 +14,62 @@ $neutral-white: #FFFFFF;
 $support-error: #F9263F;
 $support-succes: #05C686;
 
-@mixin keyframes($name){
-  @keyframes #{$name}{
-      @content;
+@mixin keyframes($name) {
+  @keyframes #{$name} {
+    @content;
   }
-} 
+}
 
 @mixin animate($animation, $duration, $method, $times) {
   animation: $animation $duration $method $times;
+}
+
+@mixin mobile ($screen: 425px) {
+  @media screen and (max-width: $screen) and (min-width: 320px) {
+    @content
+  }
+}
+
+;
+
+@mixin tablet ($screen: 1024px) {
+  @media screen and (max-width: $screen) and (min-width: 426px) {
+    @content
+  }
+}
+
+;
+
+@mixin desktop ($screen: 2560px) {
+  @media screen and (max-width: $screen) and (min-width: 1025px) {
+    @content
+  }
+}
+
+;
+
+.appContainer {
+  @include desktop() {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @include tablet() {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  @include mobile() {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+  }
 }

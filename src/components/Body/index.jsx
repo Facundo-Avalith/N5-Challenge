@@ -12,7 +12,7 @@ const Body = () => {
 
   return (
     <div className="bodyWrapper">
-      <div className='accordeonWrapper'>
+      <div className='cardsWrapper'>
         {
           products.map((product, i) => {
             return <Card product={product} index={i} key={i} />

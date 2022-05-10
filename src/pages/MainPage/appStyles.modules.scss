@@ -4,14 +4,22 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 .mainPage {
-  width: 100vw;
-  height: 100vh;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  padding-top: 2rem;
-  position: absolute;
-  font-family: 'Roboto', sans-serif;
+  @include desktop() {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include tablet() {
+    width: 100%;
+    height: 100%;
+  }
+
+  @include mobile() {
+    width: 100%;
+    height: 100%;
+  }
 }

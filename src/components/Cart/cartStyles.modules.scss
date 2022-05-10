@@ -1,0 +1,136 @@
+@import '../scss/globalColors.scss';
+
+.cardContainer {
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+
+  @include desktop() {
+    padding: 2rem;
+    width: 400px;
+    border-radius: 8px;
+    color: $neutral-dark;
+    background: $neutral-white;
+
+    display: flex;
+  }
+
+  @include tablet() {
+    width: 400px;
+    padding: 1rem;
+    color: $neutral-dark;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  @include mobile() {
+    width: 100%;
+    padding: 1rem;
+    color: $neutral-dark;
+    background: $neutral-white;
+
+    border-radius: 8px;
+  }
+}
+
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+  margin-bottom: 10px;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: flex-start;
+
+  h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+.cardButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.button {
+  outline: none;
+  border: none;
+  transition: all 0.3s ease-in;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: $neutral-white;
+  background: $primary-color;
+
+  @include desktop() {
+    font-size: 1rem;
+    width: 100%;
+    padding: 5px;
+  }
+
+  @include tablet() {
+    font-size: 1.2rem;
+    width: 300px;
+    padding: 10px;
+  }
+
+  @include mobile() {
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.button:hover {
+  color: $neutral-dark;
+  background: $seccondary-color;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+.addButton {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 10px;
+
+  .button {
+    transition: all 0.3s ease-in;
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    color: $neutral-white;
+    background: $primary-color;
+
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .button:hover {
+    color: $neutral-white;
+    background: $seccondary-color;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+  }
+
+}

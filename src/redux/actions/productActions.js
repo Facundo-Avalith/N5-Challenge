@@ -23,11 +23,15 @@ export const initProducts = (response) => ({
   },
 });
 
-export const update_stock = ({name, amount, price}) => ({
-  type: TYPES.UPDATE_STOCK,
-  payload: {
-    name,
-    amount,
-    price
-  },
-});
+export const update_stock = ({ name, amount, price }) => {
+  amount = parseInt(amount);
+  price = parseInt(price);
+  return {
+    type: TYPES.UPDATE_STOCK,
+    payload: {
+      name,
+      amount,
+      price,
+    },
+  };
+};

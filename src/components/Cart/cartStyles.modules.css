@@ -1,0 +1,243 @@
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .appContainer {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .appContainer {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .appContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.cardContainer {
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .cardContainer {
+    padding: 2rem;
+    width: 400px;
+    border-radius: 8px;
+    color: #1A1613;
+    background: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .cardContainer {
+    width: 400px;
+    padding: 1rem;
+    color: #1A1613;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .cardContainer {
+    width: 100%;
+    padding: 1rem;
+    color: #1A1613;
+    background: #FFFFFF;
+    border-radius: 8px;
+  }
+}
+
+.cardTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.cardTitle h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cardContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cardContent h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cardButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.button {
+  outline: none;
+  border: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  background: #D22630;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .button {
+    font-size: 1rem;
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .button {
+    font-size: 1.2rem;
+    width: 300px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .button {
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.button:hover {
+  color: #1A1613;
+  background: #FF7040;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.addButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 10px;
+}
+
+.addButton .button {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background: #D22630;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.addButton .button:hover {
+  color: #FFFFFF;
+  background: #FF7040;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=cartStyles.modules.css.map */

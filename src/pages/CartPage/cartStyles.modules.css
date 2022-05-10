@@ -1,0 +1,184 @@
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .appContainer {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .appContainer {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .appContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .cartWrapper {
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .cartWrapper {
+    padding: 1rem;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .cartWrapper {
+    padding: 1rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .cartContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .cartContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .cartContainer {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.tittleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.buttonWrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clearCart {
+  outline: none;
+  border: none;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+  background: #D22630;
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .clearCart {
+    font-size: 1rem;
+    padding: 5px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .clearCart {
+    font-size: 1.2rem;
+    padding: 10px;
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .clearCart {
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.clearCart:hover {
+  color: #1A1613;
+  background: #FF7040;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=cartStyles.modules.css.map */

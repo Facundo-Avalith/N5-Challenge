@@ -1,10 +1,11 @@
 import React from 'react'
-import Forms from '../../components/Forms'
+import Forms from '../../components/Forms';
+import './addItemsStyles.modules.scss';
 
 const AddItemPage = () => {
   return (
-    <div>
-      <Forms/>
+    <div className='formsWraper'>
+      <Forms />
     </div>
   )
 }

@@ -1,0 +1,244 @@
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .appContainer {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .appContainer {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .appContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+.cardContainer {
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .cardContainer {
+    width: 300px;
+    padding: 2rem;
+    color: #1A1613;
+    background: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: start;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .cardContainer {
+    padding: 1rem;
+    color: #1A1613;
+    background: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: start;
+    border-radius: 8px;
+  }
+}
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .cardContainer {
+    padding: 1rem;
+    color: #1A1613;
+    background: #FFFFFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: start;
+    border-radius: 8px;
+  }
+}
+
+.cardTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.cardTitle h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.cardContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.cardContent h4 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cardButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.actionButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.actionButtons .add {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color: #1A1613;
+  background: #FFFFFF;
+  border: 1px solid #FF7040;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+}
+
+.actionButtons .add:hover {
+  color: #FFFFFF;
+  background: #FF7040;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.addButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin-top: 10px;
+}
+
+.addButton .button {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  background: #D22630;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.addButton .button:hover {
+  color: #FFFFFF;
+  background: #FF7040;
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
+}
+/*# sourceMappingURL=cardStyles.modules.css.map */

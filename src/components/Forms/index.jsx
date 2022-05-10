@@ -1,25 +1,30 @@
-import React, { useState } from "react";
+import React from "react";
 import { useDispatch } from "react-redux";
 import { useForm } from "../../helpers/useForm";
 import { update_stock } from "../../redux/actions/productActions";
+import './formStyles.modules.scss';
 
 const Forms = () => {
   const dispatch = useDispatch()
   const [formValues, handleInputChange] = useForm({
     name: "",
-    amount: 0,
-    price: 0,
+    amount: "",
+    price: "",
   });
   const { name, amount, price } = formValues;
 
   const handleSubmit = (e) => {
+    console.log(formValues)
     e.preventDefault();
 
     dispatch(update_stock(formValues))
   }
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className='formContainer'>
+      <div className="title">
+        <h1> Agregue un producto al stock</h1>
+      </div>
+      <form onSubmit={handleSubmit} className="form">
         <input
           type="text"
           placeholder="Nombre del producto"
@@ -27,15 +32,13 @@ const Forms = () => {
           value={name}
           onChange={handleInputChange}
         />
-        <label>Product name</label>
         <input
-          type="number"
+          type="text"
           placeholder="Cantidad del producto"
           name="amount"
           value={amount}
           onChange={handleInputChange}
         />
-        <label>Product amount</label>
         <input
           type="text"
           placeholder="Precio del producto"
@@ -43,8 +46,7 @@ const Forms = () => {
           value={price}
           onChange={handleInputChange}
         />
-        <label>Product price</label>
-        <button onSubmit={handleSubmit}> Add item</button>
+        <button className="buttonSubmit" onSubmit={handleSubmit}> Agregar al stock</button>
       </form >
     </div>
   );

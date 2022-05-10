@@ -1,21 +1,15 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
 import * as Io from 'react-icons/io';
-
 import { add_product_to_cart } from '../../../redux/actions/cartActions';
-
+import './cardStyles.modules.css';
 
 const Card = ({ product, index }) => {
   const { name, price, amount, id } = product;
-
-  const { item } = useSelector((state) => state.cart);
   const { prods } = useSelector((state) => state.store);
   const { products } = prods;
-
-  const [productAmount, setProductamount] = useState(1);
-
   const dispatch = useDispatch();
+  const [productAmount, setProductamount] = useState(1);
 
   const incrementAmount = () => {
     if (productAmount < amount) {
@@ -35,20 +29,23 @@ const Card = ({ product, index }) => {
   return (
     <div className='cardContainer'>
       <div className='cardTitle'>
-        <h3>Producto: {name}</h3>
+        <h3>{name}</h3>
       </div>
       <div className='cardContent'>
         <h4>Precio: ${price}</h4>
-        <h4>Cantidad: {amount}</h4>
+        <h4>Stock: {amount}</h4>
       </div>
       <div className='cardButtons'>
-
-        <Io.IoIosAdd className='add' onClick={incrementAmount} />
-        <h3>{productAmount}</h3>
-        <Io.IoIosRemove className='remove' onClick={decrementAmount} />
-        <button className="button" onClick={() => { handleSubmit(index) }}>
-          <p>Agregar al carrito</p>
-        </button>
+        <div className='actionButtons'>
+          <Io.IoIosAdd className='add' onClick={incrementAmount} />
+          <h3>{productAmount}</h3>
+          <Io.IoIosRemove className='add' onClick={decrementAmount} />
+        </div>
+        <div className='addButton'>
+          <button className="button" onClick={() => { handleSubmit(index) }}>
+            <p>Agregar al carrito</p>
+          </button>
+        </div>
 
       </div>
     </div>

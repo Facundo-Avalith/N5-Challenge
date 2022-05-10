@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 
 import { clear_cart } from '../../redux/actions/cartActions';
 import Cart from '../../components/Cart/Cart';
+import './cartStyles.modules.css';
 
 const CartPage = () => {
   const itemList = useSelector((state) => state.cart);
@@ -15,13 +16,15 @@ const CartPage = () => {
   }
   if (!item) return null;
   return (
-    <div>
-      <h1> Tu carrito de compras</h1>
-      <div>
+    <div className='cartWrapper'>
+     <div className='title'> <h1> Tu carrito de compras</h1></div>
+      <div className='cartContainer'>
         {item.map((product, index) => {
           return (<Cart key={index} product={product} />)
         })}
-        <button onClick={clearCart}>Eliminar todos los productos</button>
+      </div>
+      <div className='buttonWrapper'>
+      <button className='clearCart' onClick={clearCart}>Eliminar todos los productos</button>
       </div>
     </div>
 

@@ -1,0 +1,19 @@
+@import '../../components/scss/globalColors.scss';
+
+.formsWraper {
+
+  @include mobile() {
+    width: 100%;
+    height: 100vh;
+  }
+
+  @include tablet() {
+    width: 100%;
+    height: 100vh;
+  }
+
+  @include desktop() {
+    width: 100%;
+    height: 100vh;
+  }
+}

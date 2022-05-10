@@ -28,11 +28,3 @@ export const storeReducer = (state = initialState, action) => {
       return state;
   }
 };
-/*
-{
-        prods: {
-          ...state.prods.products,
-          id: { newItemInStock },
-        },
-      };
-*/

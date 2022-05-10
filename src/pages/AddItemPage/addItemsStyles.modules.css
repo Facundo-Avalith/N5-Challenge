@@ -48,4 +48,25 @@
     height: 100vh;
   }
 }
-/*# sourceMappingURL=globalColors.css.map */
+
+@media screen and (max-width: 425px) and (min-width: 320px) {
+  .formsWraper {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 426px) {
+  .formsWraper {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 2560px) and (min-width: 1025px) {
+  .formsWraper {
+    width: 100%;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=addItemsStyles.modules.css.map */
